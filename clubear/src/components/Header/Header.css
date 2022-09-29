@@ -1,0 +1,85 @@
+.headerContainer{
+text-align: center;
+}
+
+.imgContainer{
+    position: relative;
+    width: 100%;
+    top: 4px;
+}
+.imgContainer p {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: white;
+
+    margin: 0 auto;
+    font-weight: bolder;
+    font-style: italic;
+}
+.imgHeader{
+    width: 100%;
+    background-position: center;
+    z-index: 1;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.imgContainer button{
+  position: absolute;
+background-color: #C2124E;
+  top: 70%;
+right: calc(40% - 100px);
+width: fit-content;
+  border-radius: 50px;
+  border: none;
+  padding: 1rem;
+}
+.imgContainer button:hover{
+cursor: pointer;
+transform: scale(1.02);
+transition: ease-in-out 0.5s;
+background-color: #C2135f;
+}
+.imgContainer button span{
+padding: 2rem;
+font-size: 1.2rem;
+color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+@media  (min-width:768px){
+.imgContainer button{
+    right: calc(45% - 100px);
+}
+
+}
+
+@media  (min-width:1024px){
+.imgContainer button{
+    right: calc(49% - 100px);
+}
+}
+
+@media (max-width:500px){
+  .imgHeader{
+    height: 70vh;
+  }
+    .imgContainer button {
+      top: 75%;
+      margin-top: 1rem;
+    }
+}
+
+@media (max-width:425px){
+  .buttonLink{
+    margin-top: 1rem;
+  }
+}

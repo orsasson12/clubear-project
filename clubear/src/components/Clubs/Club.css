@@ -1,0 +1,235 @@
+ .gridContainer{
+     display: grid;
+     width: 100%;
+     padding-bottom: 1rem;
+     grid-gap: 1rem;
+     justify-content: space-around;
+    grid-template-columns: repeat(3,auto);
+    background: url('../../assets/Images/WhatsApp\ Image\ 2022-07-10\ at\ 19.20.44.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1.9rem; 
+}
+
+
+
+
+.image{
+    position: relative;
+    width: 100%;
+    
+}
+
+.image h2{
+    position: absolute;
+        top: 35%;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        width: 100%;
+        font-weight: bolder;
+        font-style: italic;
+
+}
+
+.image__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4/3;
+}
+
+.image__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.image__overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.image__overlay--blur{
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.5s;
+}
+
+.image__overlay:hover> *{
+    transform: translateY(0);
+} 
+
+
+.image__title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__desc{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+.image__overlay span{
+    font-size: 2rem;
+}
+
+.singleClubImg{
+display: flex;
+justify-content: center;
+background: url('../../assets/Images/WhatsApp\ Image\ 2022-07-10\ at\ 19.20.44.jpeg');
+align-items: center;
+background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.singleClubImg img{
+    align-self: center;
+    width: 100%;
+    aspect-ratio: 1276/500;
+}
+
+.singleClubDetailsContainer{
+    background: url('../../assets/Images/WhatsApp\ Image\ 2022-07-10\ at\ 19.20.44.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    bottom: 0.25rem;
+    padding: 1rem;
+}
+
+.singleClubDetailsContainer h2{
+    font-size: 3rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.singleClubDetailsContainer .openingTimes{
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    opacity: 0.6;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.4rem;
+}
+.singleClubDetailsContainer span{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+.singleClubDetailsContainer span:hover{
+    opacity: 1;
+    font-size: 1.3rem;
+    transition: ease-in-out 0.4s;
+}
+
+.singleClubDetailsContainer .descripition{
+font-size: 1.7rem;
+color: white;
+width: 90%;
+
+}
+
+.musicTypes{
+    font-size: 1.4rem;
+    color: white;
+}
+
+
+.grid__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.whatsappIcon{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    background-color: green;
+    border-radius: 50px;
+    position: fixed;
+    top: 50%;
+}
+.whatsappText{
+ font-size: 1rem;
+ font-weight: bold;
+ color: white;
+}
+.what__icon__home{
+        color: #4BC257;
+        width: 4rem;
+        font-size: 3rem;
+        cursor: pointer;
+}
+
+.whatsappIcon:hover{
+    transform: scale(1, 1.1);
+        transition: ease-in-out 0.6s;
+        color: rgb(30, 207, 30)
+}
+
+
+@media (max-width:786px) {
+    .gridContainer {
+            grid-template-columns: 1fr 1fr;
+        }
+
+    .image{
+        margin: 0 auto;
+        text-align: center;
+  }
+.grid__container{
+    grid-template-columns: 1fr;
+}
+.image__overlay span{
+    font-size: 1.5rem;
+}
+.image__title{
+    font-size: 1.2rem;
+}
+.singleClubImg img{
+    aspect-ratio: 1276/800;
+}
+} 
+
+
+@media (max-width:391px) {
+    .musicTypes{
+        font-size: 1rem;
+        width: 80%;
+    }
+   .singleClubDetailsContainer .descripition{
+        font-size: 1.1rem;
+        width: 80%;
+    }
+    .singleClubDetailsContainer .openingTimes{
+        font-size: 1rem;
+    }
+}
+

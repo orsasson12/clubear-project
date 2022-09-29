@@ -1,0 +1,69 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+form > input {
+    padding: 1rem;
+    width: 50%;
+    text-align: end;
+    font-weight: bold;
+    font-style: italic;
+}
+
+form > button{
+    padding: 0.5rem;
+    margin: 1rem;
+    color: plum;
+    cursor: pointer;
+    background-color: black;
+}
+
+form > button:hover{
+    transition: ease 0.7s;
+    color: black;
+    background-color: plum;
+    padding: 1rem;
+}
+
+.musicTypes>input{
+    margin: 0.5rem;
+}
+.musicTypes > input:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+    transition: ease-out 0.5s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.green{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: green;
+    font-size: 1rem;
+}
+.red{
+    border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(255, 10, 10);
+        font-size: 1rem;
+}
+.yellow{
+    border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(204, 253, 8);
+        font-size: 1rem;
+}

@@ -1,0 +1,50 @@
+.footerContainer{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    background-color: #181818;
+    color: white;
+    justify-content: space-around;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+.footer__right-side{
+display: flex;
+flex-direction: column;
+
+}
+
+
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.social-media > * {
+    font-size: 1.5rem;
+    margin: 1rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.social-media:hover>*{
+    transform: scale(1.5,1.5);
+    transition: ease-in 0.8s;
+    cursor: pointer;
+}
+
+.facebook:hover{
+  color: #1871E7;
+}
+
+.insta:hover{
+    color: #DD2A7B;
+}
+
+
+.footer__left-side h3{
+    font-size: 1.5rem;
+}

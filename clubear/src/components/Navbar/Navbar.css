@@ -1,0 +1,110 @@
+.navbarContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+background-color: #283048;
+    background-image: linear-gradient(315deg, #859398 5%, #283048 40%);
+}
+
+.navbarContainer > img{
+   width: 190px;
+   padding-right: 52rem;
+}
+
+.listContainer{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;  
+}
+.LinkToAbout{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+.listContainer ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.listContainer ul li{
+    color: white;
+    cursor: pointer;
+}
+.listContainer ul li:hover{
+    transform: scale(1.2,1.2);
+    transition: ease-in 0.4s;
+    color: #ea1e3cd7;
+}
+
+.daniButton {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+
+}
+
+.daniButton:hover {
+    transform: scale(1.2, 1.2);
+    transition: ease-in 0.4s;
+    color: #ea1e3cd7;   
+    cursor: pointer;
+}
+@media (max-width:1024px){
+    .navbarContainer>img {
+    
+            padding-right: 10rem;
+        }
+}
+@media (max-width:768px){
+    .navbarContainer>img {
+        
+            padding-right: 10rem;
+        }
+}
+@media (max-width:425px){
+    .navbarContainer>img {
+            padding-right: 0;
+        }
+        .listContainer ul{
+            flex-direction: row;
+        }
+        .listContainer ul li{
+           padding: 0.5rem;
+        }
+                 .LinkToAbout {
+        
+                     padding: 0;
+                 }
+       
+}
+@media (min-width:426px) and (max-width:504px){
+    .navbarContainer>img{
+        padding-right: 5rem;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1176px){
+    .navbarContainer>img {
+            padding-right: 25rem;
+        }
+}
+
+@media (max-width:350px){
+    .navbarContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbarContainer > img{
+        padding: 0;
+    }
+    .listContainer ul li{
+        padding: 0.2rem;
+    }
+}
